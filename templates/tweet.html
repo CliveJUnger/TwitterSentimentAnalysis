@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="block1">
+<h1>Analysis on: {{stock}}</h1>
+  <p>
+{{newTweets[0].text}}
+  </p>
+<h1>Average Sentiment: {{avg}}</h1>
+<h2>From tweets over: {{timedelta}} minutes</h2>
+</div>
+{% endblock %}

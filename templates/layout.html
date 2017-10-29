@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Website</title>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body{
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    color: #8ac640;
+    font-size: 2.5em;
+}
+
+</style>
+
+</head>
+<body>
+  <form action="/tweet" method="POST">
+    <input type="text" placeholder="stock" name="stock"></input>
+    <input type="submit" value="Sumbit">
+  </form>
+ {% block body %}{% endblock %}
+
+</body>
+</html>
